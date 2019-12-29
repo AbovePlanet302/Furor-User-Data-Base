@@ -1,16 +1,6 @@
 
 const Discord = require("discord.js");
 
-const botconfig = require("../botconfig.json");
-
-const red = botconfig.red;
-
-const green = botconfig.green;
-
-const orange = botconfig.orange;
-
-const errors = require("../utils/errors.js");
-
 
 
 module.exports.run = async (bot, message, args) => {
@@ -25,7 +15,6 @@ module.exports.run = async (bot, message, args) => {
 
     }
     let rreason = args.join(" ").slice(0);
-    if(!rreason) return errors.noReason(message.channel);
 
     let reportEmbed = new Discord.RichEmbed()
 
