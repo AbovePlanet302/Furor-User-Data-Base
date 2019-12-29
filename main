@@ -1,4 +1,4 @@
-const http = require('procfile');
+const http = require('http');
 
 process
   .on('SIGTERM', shutdown('SIGTERM'))
