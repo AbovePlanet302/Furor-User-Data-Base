@@ -6,10 +6,7 @@ const client = new Client({
     disableEveryone: true
 });
 
-client.commands = new Collection();
 client.aliases = new Collection();
-
-client.categories = fs.readdirSync("./commands/");
 
 config({
     path: __dirname + "/.env"
