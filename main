@@ -2,6 +2,7 @@ const http = require('procfile');
 
 process
   .on('SIGTERM', shutdown('SIGTERM'))
+  .on('SIGTERM', shutdown('SIGKILL'))
   .on('SIGINT', shutdown('SIGINT'))
   .on('uncaughtException', shutdown('uncaughtException'));
 
