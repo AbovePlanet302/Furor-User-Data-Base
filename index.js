@@ -16,7 +16,7 @@ config({
 });
 
 ["command"].forEach(handler => {
-    require(`../command/${command}`)(client);
+    require(`../command/${handlers}`)(client);
 });
 
 client.on("ready", () => {
