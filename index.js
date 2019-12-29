@@ -15,10 +15,6 @@ config({
     path: __dirname + "/.env"
 });
 
-["command"].forEach(handler => {
-    require(`../command/${handlers}`)(client);
-});
-
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
